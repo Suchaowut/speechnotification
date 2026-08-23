@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Speech Notification</string>
+    <string name="navigation_drawer_open">เปิดเมนู</string>
+    <string name="navigation_drawer_close">ปิดเมนู</string>
+</resources>

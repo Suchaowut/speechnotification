@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="ตั้งค่าเสียงพูด"
+        app:titleTextColor="#FFFFFF" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="เลือกโทนเสียงผู้พูด (Voices)" android:textSize="18sp" android:textStyle="bold" />
+            <Spinner android:id="@+id/spinnerVoices" android:layout_width="match_parent"
+                android:layout_height="48dp" android:layout_marginTop="10dp" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ความเร็วในการพูด" android:textSize="18sp" android:layout_marginTop="20dp" />
+            <SeekBar android:id="@+id/seekRate" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:max="200" android:progress="100" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ระดับโทนเสียง (Pitch)" android:textSize="18sp" android:layout_marginTop="20dp" />
+            <SeekBar android:id="@+id/seekPitch" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:max="200" android:progress="100" />
+
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="ข้อความสำหรับทดสอบพูด" android:textSize="18sp" android:layout_marginTop="20dp"/>
+
+            <EditText android:id="@+id/editTestMessage" android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:hint="พิมพ์ข้อความที่นี่"
+                android:minHeight="48dp" />
+
+            <Button android:id="@+id/btnPreview" android:layout_width="match_parent"
+                android:layout_height="60dp" android:text="🔊 ลองฟังเสียงตัวอย่าง"
+                android:layout_marginTop="30dp" android:backgroundTint="#2196F3" android:textSize="18sp" />
+
+            <Button android:id="@+id/btnSaveSettings" android:layout_width="match_parent"
+                android:layout_height="60dp" android:text="บันทึกการตั้งค่า"
+                android:layout_marginTop="12dp" android:textSize="18sp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="หน้าหลัก" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_menu_preferences"
+            android:title="ตั้งค่าเสียงพูด" />
+        <item
+            android:id="@+id/nav_apps"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="เลือกแอปที่จะอ่าน" />
+        <item
+            android:id="@+id/nav_timer"
+            android:icon="@drawable/ic_menu_recent_timer"
+            android:title="ตั้งเวลาเปิด-ปิด" />
+    </group>
+</menu>
